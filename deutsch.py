@@ -22,5 +22,5 @@ result = job.result()
 counts = result.get_counts()
 print("Counts:", counts)
 
-plot_histogram(counts, title='Deutsch Algorithm – Balanced Function')
+plot_histogram(counts, title='Deutsch Algorithm – Constant Function')
 plt.show()

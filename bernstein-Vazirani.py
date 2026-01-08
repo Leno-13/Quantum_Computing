@@ -1,10 +1,11 @@
+import random
 from qiskit import QuantumCircuit
 from qiskit_aer import AerSimulator
 from qiskit.visualization import plot_histogram
 import matplotlib.pyplot as plt
 
-ssh = "11010"
-n = len(ssh)
+n = 5 # len of oracle
+ssh = ''.join(random.choice(['0','1']) for i in range(n))
 qc = QuantumCircuit(n + 1, n)
 for i in range(n):
     qc.h(i)
